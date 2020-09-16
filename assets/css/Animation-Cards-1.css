@@ -1,0 +1,14 @@
+.card-header {
+  height: 200px;
+  background-color: rgba(44,62,80,0) !important;
+}
+
+.card-text:last-child {
+  font-size: 30px;
+  color: #595959;
+}
+
+.card-header:first-child:hover {
+  background-color: #ffb366;
+}
+
