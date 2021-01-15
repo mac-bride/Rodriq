@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stingy People Association ID Generator</title>
+    <meta name="description" content="Generate your free ID">
+    <meta name="keywords" content="stingy, SMA, ID">
+    <meta name="author" content="@Rodriiqq">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/footer.css">
+<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-md-1"></div> -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 style="text-align: center;">Stingy People ID Generator</h2>
+                        <hr>
+                        <div id="id-card">
+                            <div class="id-card material-ui-shadow">
+
+                                <!-- \\ mugshot -->
+                                <div class="id-card__mugshot">
+                                    <img src="assets/default.png" id="id-card-mugshot">
+                                </div>
+                                <!-- // mugshot -->
+
+                                <!-- \\ foundation logo -->
+                                <div class="id-card__logo logo">
+                                    <span class="logo__big">STINGY MEN</span>
+                                    <span class="logo__small">Association</span>
+                                </div>
+                                <!-- // foundation logo -->
+
+                                <!-- \\ subject id -->
+                                <div class="id-card__subject-id">
+                                    <p id="id-state" style="background-color: rgb(78, 77, 77);">VALID</p>
+                                </div>
+                                <!-- // subject id -->
+
+                                <!-- \\ experiment banner -->
+                                <div class="id-card__banner">
+
+                                    <span class="id-card__banner-text" id="id-card-no">ID No: ###dddddddddddd#</span>
+                                </div>
+                                <!-- // experiment banner -->
+
+                                <!-- \\ details -->
+                                <div class="id-card__details">
+                                    <div id="selected-motto" class="motto">MOTTO</div>
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Name</span>
+                                        <span class="id-card__detail-value" id="id-card-name">Your Full Name</span>
+                                    </div>
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Date of Birth</span>
+                                        <span class="id-card__detail-value" id="id-card-date-of-birth">09-20-1980</span>
+                                    </div>
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Branch</span>
+                                        <span class="id-card__detail-value" id="id-card-branch">Your Branch</span>
+                                    </div>
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Issue Date</span>
+                                        <span class="id-card__detail-value" id="issued-date">08-01-2018</span>
+                                    </div>
+                                </div>
+                                <!-- // details -->
+
+                                <!-- \\ short details -->
+                                <div class="id-card__details id-card__details--short">
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Gender</span>
+                                        <span class="id-card__detail-value" id="id-card-gender">M</span>
+                                    </div>
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Height</span>
+                                        <span class="id-card__detail-value" id="id-card-height">6'03"</span>
+                                    </div>
+                                    <div class="id-card__detail">
+                                        <span class="id-card__detail-label">Weight</span>
+                                        <span class="id-card__detail-value" id="id-card-weight">145</span>
+                                    </div>
+                                    <br>
+                                    <svg id="barcode"></svg>
+                                </div>
+                                <!-- // short details -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="text-align: center;">
+                        <small><marquee>Support the Assosiation at 683780274</marquee></small>
+
+                        <br>
+                        <h4>Fill the Information and Download Your ID for FREE</h4>
+
+                        <div id="id-form">
+                            <div class="id-form">
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Name</div>
+                                    <div class="id-form__input">
+                                        <input type="text" id="name" placeholder="Name" width="16">
+                                    </div>
+                                </div> &nbsp;
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Date of Birth</div>
+                                    <div class="id-form__input">
+                                        <input type="date" id="date-of-birth" placeholder="Date of Birth">
+                                    </div>
+                                </div>
+                                <div></div>
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Select Motto</div>
+                                    <div class="id-form__input">
+                                        <select id="motto">
+                                            <option value=""></option>
+                                            <option value="25 So No Dey">25 So no Dey</option>
+                                            <option value="Let Me See What I Can Do">Let Me See What I Can Do</option>
+                                            <option value="I Will Call You Back">I Will Call You Back</option>
+                                            <option value="OKAY! My Dear">OKAY! My Dear</option>
+                                        </select>
+                                    </div>
+                                </div>&nbsp;
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Height</div>
+                                    <div class="id-form__input">
+                                        <input type="text" id="height" placeholder="Height">
+                                    </div>
+                                </div>
+                                <div></div>
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Image</div>
+                                    <div class="id-form__input">
+                                        <input type="file" id="mugshot" accept="image/*">
+                                    </div>
+                                </div>
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Weight</div>
+                                    <div class="id-form__input">
+                                        <input type="text" id="weight" placeholder="Weight">
+                                    </div>
+                                </div>
+                                <div></div>
+                                <div class="id-form__row id-form__row--inline">
+                                    <div class="id-form__label">Enter Branch</div>
+                                    <div class="id-form__input">
+                                        <input type="text" id="branch" placeholder="Branch">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div style="text-align: center;">
+            <button class="button-1" id="download-button">Download</button> <br>
+            <button class="button">
+            <a  id="share" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share">Share on Whatsapp</a></button>
+
+        </div>
+
+    </div>
+    <div class="add">
+        <footer>
+            <div class="copyright">
+                <p>&copy 2021 - Stingy People Association | Rodriiqq</p>
+            </div>
+            <div class="social">
+                <a id="support" href="#" class="support">Support Association</a>
+                <a href="http://twitter.com/rodriiqq" class="tweet">t</a>
+                <a href="https://www.tiktok.com/@rodriiqq?lang=en" class="face">Tk</a>
+                <a href="http://instagram.com/rodriiqq.photography" class="linked">ig</a>
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/barcode.js"></script>
+<script src="js/script.js"></script>
+<script src="js/html2canvas.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/swal.js"></script>
+
+</html>
