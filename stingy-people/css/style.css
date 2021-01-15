@@ -168,6 +168,13 @@ body {
     background-color: aqua;
 }
 
+.bg {
+    /* text-align: center; */
+    background-image: url(/assets/texture.jpeg);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+}
+
 .button-1 {
     background-color: #0756a0;
     /* Green */
