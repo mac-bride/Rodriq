@@ -170,7 +170,7 @@ body {
 
 .bg {
     /* text-align: center; */
-    background-image: url(/assets/texture.jpeg);
+    background-image: url(https://raw.githubusercontent.com/mac-bride/Rodriq/master/stingy-people/assets/texture.jpeg);
     background-size: contain;
     /* background-repeat: no-repeat; */
 }
