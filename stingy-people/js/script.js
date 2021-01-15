@@ -115,6 +115,9 @@ $(document).ready(function() {
 
 
     const downloadCharacterSheet = () => {
+        var vp = document.getElementById("viewportMeta").getAttribute("content");
+
+    document.getElementById("viewportMeta").setAttribute("content", "width=800");
 
         const node = document.getElementById('id-card');
 
@@ -147,6 +150,7 @@ $(document).ready(function() {
                     swal("Stay STINGY :)");
                 }
             });
+         document.getElementById("viewportMeta").setAttribute("content", vp);
 
     };
 
