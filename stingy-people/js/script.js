@@ -114,10 +114,56 @@ $(document).ready(function() {
 
 
 
-    const downloadCharacterSheet = () => {
+    // const downloadCharacterSheet = () => {
+    //     var vp = document.getElementById("viewportMeta").getAttribute("content");
+
+    //     document.getElementById("viewportMeta").setAttribute("content", "width=800");
+
+    //     const node = document.getElementById('id-card');
+
+    //     html2canvas(node).then(canvas => {
+    //         // document.body.appendChild(canvas)
+    //         // var img    = canvas.toDataURL("image/png");
+    //         // document.write('<img src="'+img+'"/>');
+    //         var link = document.createElement('a');
+    //         link.download = 'filename.png';
+    //         link.href = canvas.toDataURL()
+    //         link.click();
+    //     });
+    //     swal({
+    //             title: "Please Support",
+    //             text: "If you enjoy our free service, please support through 683780274",
+    //             icon: "info",
+    //             closeOnClickOutside: false,
+    //             buttons: {
+    //                 cancel: true,
+    //                 confirm: "Support",
+    //             },
+    //             dangerMode: true,
+    //         })
+    //         .then((willDelete) => {
+    //             if (willDelete) {
+    //                 swal("Thank you for the Support", {
+    //                     icon: "success",
+    //                 });
+    //             } else {
+    //                 swal("Stay STINGY :)");
+    //             }
+    //         });
+    //     document.getElementById("viewportMeta").setAttribute("content", vp);
+
+    // };
+
+    // const bindInputToElement = (inputEl, elementEl) => {
+    //     inputEl.addEventListener('change', () => {
+    //         elementEl.textContent = inputEl.value;
+    //     });
+    // }
+
+    $("#download-button").click(() => {
         var vp = document.getElementById("viewportMeta").getAttribute("content");
 
-    document.getElementById("viewportMeta").setAttribute("content", "width=800");
+        document.getElementById("viewportMeta").setAttribute("content", "width=800");
 
         const node = document.getElementById('id-card');
 
@@ -150,23 +196,18 @@ $(document).ready(function() {
                     swal("Stay STINGY :)");
                 }
             });
-         document.getElementById("viewportMeta").setAttribute("content", vp);
+        document.getElementById("viewportMeta").setAttribute("content", vp);
 
-    };
 
-    const bindInputToElement = (inputEl, elementEl) => {
-        inputEl.addEventListener('change', () => {
-            elementEl.textContent = inputEl.value;
-        });
-    }
+    });
 
-    document
-        .getElementById('download-button')
-        .addEventListener('click', downloadCharacterSheet);
+    // document
+    //     .getElementById('download-button')
+    //     .addEventListener('click', downloadCharacterSheet);
 
-    document
-        .querySelector('.id-card__subject-id')
-        .textContent = md5('something').slice(0, 8);
+    // document
+    //     .querySelector('.id-card__subject-id')
+    //     .textContent = md5('something').slice(0, 8);
 
 });
 
