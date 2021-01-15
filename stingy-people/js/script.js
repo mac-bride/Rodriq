@@ -50,6 +50,10 @@ $(document).ready(function() {
     $('#branch').keyup(() => {
         $('#id-card-branch').text($('#branch').val())
     });
+    // Bind position
+    $('#position').keyup(() => {
+        $('#id-card-position').text($('#position').val())
+    });
 
     // BindWeight
     $('#weight').keyup(() => {
@@ -79,7 +83,7 @@ $(document).ready(function() {
                     closeOnClickOutside: false,
                     buttons: {
                         cancel: true,
-                        confirm: "Support",
+                        confirm: "Cool",
                     },
                     dangerMode: true,
                 })
@@ -161,6 +165,7 @@ $(document).ready(function() {
     // }
 
     $("#download-button").click(() => {
+        $('#branch').focusout()
         var vp = document.getElementById("viewportMeta").getAttribute("content");
 
         document.getElementById("viewportMeta").setAttribute("content", "width=800");
@@ -183,7 +188,7 @@ $(document).ready(function() {
                 closeOnClickOutside: false,
                 buttons: {
                     cancel: true,
-                    confirm: "Support",
+                    confirm: "Okay",
                 },
                 dangerMode: true,
             })
