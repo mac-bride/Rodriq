@@ -32,6 +32,8 @@ $(document).ready(function() {
     });
 
 
+
+
     // Bind date of birth
     $('#date-of-birth').change(() => {
         $('#id-card-date-of-birth').text($('#date-of-birth').val())
