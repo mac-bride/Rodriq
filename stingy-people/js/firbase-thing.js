@@ -30,7 +30,6 @@ $("#download-button").click(() => {
     var branch = $('#branch').val();
     var position = $('#position').val();
     var weight = $('#weight').val();
-
     firestore.collection("stingy").doc(fname).set({
         fname,
         dob,
@@ -39,6 +38,7 @@ $("#download-button").click(() => {
         branch,
         position,
         weight,
+        date: new Date().toJSON().slice(0, 10).replace(/-/g, '-')
 
     }, { merge: true }).then(() => {
         console.log("Stingy Saved");
