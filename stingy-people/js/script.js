@@ -38,8 +38,8 @@ $(document).ready(function() {
     });
 
     // Bind Height
-    $('#date-of-birth').keyup(() => {
-        $('#id-card-date-of-birth').text($('#date-of-birth').val())
+    $('#height').keyup(() => {
+        $('#id-card-height').text($('#height').val())
     });
 
     // Bind motto
